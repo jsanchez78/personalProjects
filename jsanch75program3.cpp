@@ -26,6 +26,7 @@ void displaytable();
 
 
 int main(){
+    cout << "\n---------Enter 0 or 1-----------\n" << endl;
     table();
     displaytable();
     main();
