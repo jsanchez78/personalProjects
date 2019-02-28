@@ -451,6 +451,7 @@ Add to the stack
         kick_out(buzzer);
         QueueNodes *bribe = buzzer_bucket.top;
         buzzer_bucket.top = buzzer_bucket.top->next;
+        buzzer_bucket.buzzer_bucket_size--;//Adjust size of bucket
         if(buzzer_bucket.top != nullptr)//SingleNode case in stack
           buzzer_bucket.top->prev = nullptr;
         //Push stack top into front of queue
